@@ -30,7 +30,6 @@ fn encrypt_to_morse_code(text: &str) -> String {
     let morse_code_mapping = retrieve_morse_code_mapping();
     let mut encrypted = String::new();
 
-    // TODO: grab morse code entry, concatenate to then return `encrypted` string
     for i in 0..text.len() {
         let character = characters[i];
         let morse_code_character = &morse_code_mapping[character.to_string()];
